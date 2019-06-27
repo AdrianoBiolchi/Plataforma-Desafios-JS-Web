@@ -1,0 +1,16 @@
+.bottomNavBar{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.5rem 0.25rem;
+  }
+  .bottomNavBar .nav-link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  

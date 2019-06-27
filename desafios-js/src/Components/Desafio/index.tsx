@@ -1,4 +1,7 @@
 import React, { ReactNode, StatelessComponent } from 'react';
+import './index.css';
+
+
 interface IDesafio {
     id: Number,
     title: String,
@@ -15,10 +18,10 @@ interface ComponentBProps {
 
 const Desafio = ({ desafio }: ComponentBProps) => {
     return (
-        <div className="desafio">
+       
+       <div className="desafio">
             <img className="image-fluid" src="https://hdwallpaperim.com/wp-content/uploads/2017/08/25/461263-node.js-JavaScript-748x421.jpg" />
             <div className="content">
-
                 <h2 className="desafio-titulo">{desafio.title}</h2>
                 <div className="desafio-descricao">
                     <p>{desafio.descricao}</p>
@@ -47,7 +50,7 @@ const Desafio = ({ desafio }: ComponentBProps) => {
                 </div>
 
             </div>
-        </div>
+        </div>        
     );
 }
 

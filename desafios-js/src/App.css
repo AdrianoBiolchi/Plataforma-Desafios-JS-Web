@@ -1,3 +1,5 @@
+@import './colors.css';
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -30,7 +32,7 @@ hr {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #e9ecef17;
+  border-top: 1px solid var(--border-color);
 }
 main{
   flex: 1;
@@ -41,20 +43,6 @@ main{
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-.bottomNavBar{
-  background-color: #9c27b0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 0.5rem 0.25rem;
-}
-.bottomNavBar .nav-link{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
 }
 
 .text-container {
@@ -79,13 +67,14 @@ main{
 }
 .view {
   flex: 1;
+  
 }
 
 .login-imageview {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffeb007a;
+  background-color: var(--second-color-light);
   padding: 2rem;
 }
 
@@ -141,7 +130,7 @@ main{
   color: rgba(0, 0, 0, 0.7);
 }
 .btn-primary {
-  background-color: #9c27b0;
+  background-color: var(--primary-color);
   color: #fff;
 }
 .btn-block {
@@ -152,30 +141,4 @@ main{
 }
 .appbar{
   padding: 1rem;
-}
-
-.desafio {
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.content{
-  padding: 1rem;
-}
-.desafio-descricao{
-  margin: 1rem 0;
-}
-.desafio-titulo {
-  letter-spacing: 1px;
-  font-weight: 800;
-  font-size: 1.75rem;
-}
-.desafio-autor{
-  font-weight: 300;
-  text-align: right;
-}
-
-.dates{
-  margin-top: 2rem;
 }

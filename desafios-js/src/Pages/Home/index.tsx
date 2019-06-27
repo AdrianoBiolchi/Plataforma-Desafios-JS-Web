@@ -27,15 +27,32 @@ class Home extends React.Component<IProps, IState> {
 
     async componentDidMount() {
         let date: Date = new Date();
-        const desafio = {
+        const desafio = [{
             id: 1,
             title: "Fazer um foguete com NodeJS",
             descricao: "Fazer um foguete com NodeJS é complicado, mas faça!",
             author: "Malaquias",
             dataInicio: date,
             dataFim: new Date(date.getDate()+7)
+        },
+        {
+            id: 2,
+            title: "Fazer um foguete com NodeJS PT 2",
+            descricao: "Fazer um foguete com NodeJS é complicado, mas faça!",
+            author: "Malaquias",
+            dataInicio: date,
+            dataFim: new Date(date.getDate()+7)
+        },
+        {
+            id: 3,
+            title: "Fazer um foguete com NodeJS PT 3",
+            descricao: "Fazer um foguete com NodeJS é complicado, mas faça!",
+            author: "Malaquias",
+            dataInicio: date,
+            dataFim: new Date(date.getDate()+7)
         }
-        this.setState({ desafios: [desafio] })
+    ]
+        this.setState({ desafios: desafio })
     }
 
     public render() {
